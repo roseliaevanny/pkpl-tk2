@@ -15,7 +15,6 @@ import os
 import dj_database_url
 from dotenv import load_dotenv
 
-# Memuat variabel dari file .env
 load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -101,6 +100,8 @@ if PRODUCTION:
             conn_health_checks=True,
         )
     }
+
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 else:
     # Development: gunakan SQLite
     DATABASES = {
