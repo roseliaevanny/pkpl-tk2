@@ -78,7 +78,13 @@
     }
 </style>
 
-<nav class="navbar-container">
+<nav class="navbar-container"
+    style="background: linear-gradient(
+            to right,
+            {{ theme.color|default:'#2563eb' }},
+            rgba(0.6,0.7,0.8,0.9)
+        );
+    ">
     <a href="/" class="brand">ac3b</a>
     
     <div class="nav-right">

@@ -9,7 +9,10 @@
 
     {% block meta %} {% endblock meta %}
 </head>
-<body>
+<body style="
+    background-color: {{theme.color|default:'#ffffff'}};
+    font-family: {{theme.font|default:'Arial'}};
+">
     <div class="max-w-5xl mx-auto px-4 py-6">
         {% block content %}
         {% endblock %}

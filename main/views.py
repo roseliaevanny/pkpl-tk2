@@ -34,8 +34,18 @@ def customize(request):
     theme, created = Theme.objects.get_or_create(user=request.user)
 
     if request.method == "POST":
-        theme.color = request.POST.get("color")
-        theme.font = request.POST.get("font")
+        color = request.POST.get("color")
+        font = request.POST.get("font")
+
+        ALLOWED_FONTS = ["Arial", "Times New Roman", "Courier New", "verdana"]
+
+        if color:
+            theme.color = color
+
+        if font in ALLOWED_FONTS:
+            theme.font = font
+
         theme.save()
+        return redirect("/")
     
-    return render(request, 'customize.html', {'theme': theme})
+    return render(request, "customize.html", {'theme': theme})

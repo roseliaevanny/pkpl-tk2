@@ -100,7 +100,7 @@
         <div class="form-group">
             <label for="color">Theme Color</label>
             <div class="color-picker-wrapper">
-                <input type="color" id="color" name="color" value="{{ theme.color }}">
+                <input type="color" id="color" name="color" value="{{ theme.color|default:'#ffffff' }}">
                 <span style="color: #6b7280; font-size: 0.85rem;">Click to change color</span>
             </div>
         </div>
