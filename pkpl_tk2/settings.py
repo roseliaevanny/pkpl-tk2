@@ -185,3 +185,10 @@ SOCIALACCOUNT_PROVIDERS = {
 
 SOCIALACCOUNT_LOGIN_ON_GET = True
 ACCOUNT_LOGOUT_ON_GET = True
+
+ALLOWED_EMAILS = [
+    "ninaputri3344@gmail.com",
+    "roseliasucipto8@gmail.com",
+    "lim.vanessa0106@gmail.com",
+    "frilianigloria06@gmail.com"
+]
