@@ -5,5 +5,5 @@ app_name = 'main'
 
 urlpatterns = [
     path('', show_main, name='show_main'),
-    path('/customize', customize, name='customize')
+    path('customize/', customize, name='customize')
 ]
