@@ -190,5 +190,6 @@ ALLOWED_EMAILS = [
     "ninaputri3344@gmail.com",
     "roseliasucipto8@gmail.com",
     "lim.vanessa0106@gmail.com",
-    "frilianigloria06@gmail.com"
+    "frilianigloria06@gmail.com",
+    "renatagracia06@gmail.com"
 ]
