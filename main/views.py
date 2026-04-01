@@ -8,8 +8,7 @@ from .models import Theme
 def show_main(request):
     theme = None
 
-    if request.user.is_authenticated:
-        theme = Theme.objects.filter(user=request.user).first()
+    theme = Theme.objects.filter(user__email__in=settings.ALLOWED_EMAILS).first()
 
     context = {
         'nama_kelompok': 'ac3b',
