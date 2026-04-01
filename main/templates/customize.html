@@ -108,11 +108,11 @@
         <div class="form-group">
             <label for="font">Choose Font</label>
             <select name="font" id="font">
-                <option value="Arial" {% if theme.font=='Arial' %}selected{% endif %}>Arial</option>
-                <option value="Times New Roman" {% if theme.font=='Times New Roman' %}selected{% endif %}>Times New
+                <option value="Arial" {% if theme.font == 'Arial' %}selected{% endif %}>Arial</option>
+                <option value="Times New Roman" {% if theme.font == 'Times New Roman' %}selected{% endif %}>Times New
                     Roman</option>
-                <option value="Courier New" {% if theme.font=='Courier New' %}selected{% endif %}>Courier New</option>
-                <option value="Verdana" {% if theme.font=='Verdana' %}selected{% endif %}>Verdana</option>
+                <option value="Courier New" {% if theme.font == 'Courier New' %}selected{% endif %}>Courier New</option>
+                <option value="Verdana" {% if theme.font == 'Verdana' %}selected{% endif %}>Verdana</option>
             </select>
         </div>
 
