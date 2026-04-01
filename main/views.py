@@ -38,7 +38,7 @@ def customize(request):
         color = request.POST.get("color")
         font = request.POST.get("font")
 
-        ALLOWED_FONTS = ["Arial", "Times New Roman", "Courier New", "verdana"]
+        ALLOWED_FONTS = ["Arial", "Times New Roman", "Courier New", "Verdana"]
 
         if color:
             theme.color = color

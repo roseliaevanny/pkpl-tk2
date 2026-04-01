@@ -5,7 +5,7 @@
         padding: 2rem;
         background: #ffffff;
         border-radius: 16px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         border: 1px solid #100000;
     }
@@ -108,10 +108,11 @@
         <div class="form-group">
             <label for="font">Choose Font</label>
             <select name="font" id="font">
-                <option value="Arial" {% if theme.font == 'Arial' %}selected{% endif %}>Arial</option>
-                <option value="Times New Roman" {% if theme.font == 'Times New Roman' %}selected{% endif %}>Times New Roman</option>
-                <option value="Courier New" {% if theme.font == 'Courier New' %}selected{% endif %}>Courier New</option>
-                <option value="Verdana" {% if theme.font == 'Verdana' %}selected{% endif %}>Verdana</option>
+                <option value="Arial" {% if theme.font=='Arial' %}selected{% endif %}>Arial</option>
+                <option value="Times New Roman" {% if theme.font=='Times New Roman' %}selected{% endif %}>Times New
+                    Roman</option>
+                <option value="Courier New" {% if theme.font=='Courier New' %}selected{% endif %}>Courier New</option>
+                <option value="Verdana" {% if theme.font=='Verdana' %}selected{% endif %}>Verdana</option>
             </select>
         </div>
 
