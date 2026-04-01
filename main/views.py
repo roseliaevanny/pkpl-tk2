@@ -30,7 +30,9 @@ def customize(request):
     if not is_authorized(request.user):
         return HttpResponseForbidden("You don't have access")
 
-    theme, created = Theme.objects.get_or_create(user=request.user)
+    theme = Theme.objects.filter(user__email__in=settings.ALLOWED_EMAILS).first()
+    if not theme:
+        theme = Theme.objects.create(user=request.user)
 
     if request.method == "POST":
         color = request.POST.get("color")
